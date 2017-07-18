@@ -1,6 +1,6 @@
 # Dondevamos
 
-Simple Elixir app that uses (IATACodes API)[http://iatacodes.org/] and (Kiwi API)[http://docs.skypickerpublicapi.apiary.io/#] to aggregate flights searches
+Simple Elixir app that uses [IATACodes API](http://iatacodes.org/) and [Kiwi API](http://docs.skypickerpublicapi.apiary.io/#) to aggregate flights searches
 
 ## Installation
 
@@ -14,7 +14,7 @@ end
 
 and run `$ mix deps.get`
 
-You will also need to get an (IATACodes API key)[http://iatacodes.org/], and place  
+You will also need to get an [IATACodes API key](http://iatacodes.org/), and place  
 it in your `config/secret.exs` file (see config/secrets.exs.example).
 
 ## Usage
