@@ -15,7 +15,7 @@ defmodule Dondevamos.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger]]
+    [extra_applications: [:logger, :httpoison, :proper_case]]
   end
 
   # Dependencies can be Hex packages:
@@ -28,6 +28,11 @@ defmodule Dondevamos.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:httpoison, "~> 0.11.1"},
+      {:poison, "~> 3.1"},
+      {:proper_case, "~> 1.0.2"},
+      {:statistics, "~> 0.4.0"}
+    ]
   end
 end

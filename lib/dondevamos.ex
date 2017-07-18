@@ -3,16 +3,5 @@ defmodule Dondevamos do
   Documentation for Dondevamos.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Dondevamos.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def iata_codes_api_key, do: Application.get_env :dondevamos, :iata_codes_api_key
 end
