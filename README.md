@@ -14,8 +14,7 @@ end
 
 and run `$ mix deps.get`
 
-You will also need to get an [IATACodes API key](http://iatacodes.org/), and place  
-it in your `config/secret.exs` file (see config/secrets.exs.example).
+You will also need to get an [IATACodes API key](http://iatacodes.org/), and place  it in your `config/secret.exs` file (see config/secrets.exs.example).
 
 ## Usage
 
