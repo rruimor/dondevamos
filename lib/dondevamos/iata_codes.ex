@@ -11,15 +11,16 @@ defmodule Dondevamos.IATACodes do
   end
 
   def get_direct_destinations_from!(departure) do
-    params = [
-      {:api_key, Dondevamos.iata_codes_api_key()},
-      {:departure, departure}
-    ]
-
-    # Add logging
-    get!("/routes", [], [{:params, params}]).body["response"]
+    get!("/routes", [], [{:params, get_params(departure)}]).body["response"]
     |> Enum.map(fn %{"arrival" => destination} -> destination end)
     |> Enum.uniq
     |> Enum.sort
+  end
+
+  defp get_params(departure) do
+    [
+      {:api_key, Dondevamos.iata_codes_api_key()},
+      {:departure, departure}
+    ]
   end
 end

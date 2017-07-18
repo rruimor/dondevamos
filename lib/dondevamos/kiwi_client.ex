@@ -1,8 +1,6 @@
 defmodule Dondevamos.KiwiClient do
   use HTTPoison.Base
 
-  # @expected_flight_fields ~w()
-
   def process_url(url) do
     "https://api.skypicker.com" <> url
   end
